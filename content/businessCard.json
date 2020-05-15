@@ -1,0 +1,23 @@
+{
+  "siteName": "Business Card Default Name",
+  "mainContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat ipsum nec arcu consequat vestibulum. Curabitur auctor vel lacus euismod fermentum. Vivamus maximus elit nibh. Quisque condimentum turpis nec turpis tempus, ac rhoncus arcu gravida. Praesent fermentum vel magna at vehicula. Quisque convallis, odio at condimentum lobortis, nisl urna volutpat dui, eu ultricies ipsum augue et odio. Ut justo nibh, efficitur at massa eget, facilisis fringilla ligula. Curabitur pretium tortor sit amet venenatis tincidunt. Suspendisse in metus sollicitudin, suscipit quam nec, ultrices est. Quisque fringilla interdum dolor, quis condimentum magna sagittis ut. Vivamus venenatis euismod dolor, eu vulputate justo mattis a.",
+  "sliderPhotos": [
+    "https://images.unsplash.com/photo-1570528812845-c84c2bb58131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80",
+    "https://images.unsplash.com/photo-1501746763-ba6f2e0dd47c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+    "https://images.unsplash.com/photo-1587778503547-018ad1b98e50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+  ],
+  "menuItems": [
+    {
+      "title": "GitHub",
+      "content": { "type": 0, "externalLink": "https://github.com/" }
+    },
+    {
+      "title": "About",
+      "content": { "type": 1, "content": "Even more lorem ipsum!" }
+    }
+  ],
+  "contactDetails": {
+    "phoneNumber": "+97253835431",
+    "email": "contact@sophiasa.dev"
+  }
+}
