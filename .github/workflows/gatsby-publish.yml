@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - source
+  repository_dispatch:
 
 jobs:
   build:
