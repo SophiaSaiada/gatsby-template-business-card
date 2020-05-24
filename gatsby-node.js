@@ -1,17 +1,29 @@
 const path = require(`path`);
 const packageLockJson = require("./package-lock.json");
+const businessCardJson = require("./content/businessCard.json");
 
 exports.createPages = ({ actions }) => {
   const { createPage } = actions;
-  const jsonTemplate = path.resolve(`src/templates/json.js`);
+
+  // We don't display here any page,
+  // as we however would've override it in gatsby-browser.wrapPageElement
+  const emptyTemplate = path.resolve(`src/templates/empty.js`);
 
   createPage({
-    path: `version`,
-    component: jsonTemplate,
+    path: "/",
+    component: emptyTemplate,
     context: {
-      value: {
-        version: packageLockJson.dependencies["react-business-card"]["version"],
-      },
+      selectedPageSlug: null,
+      viewerVersion:
+        packageLockJson.dependencies["react-business-card"]["version"],
     },
+  });
+
+  businessCardJson.pages.forEach((page) => {
+    createPage({
+      path: `/${page.slug}/`,
+      component: emptyTemplate,
+      context: { selectedPageSlug: page.slug },
+    });
   });
 };
