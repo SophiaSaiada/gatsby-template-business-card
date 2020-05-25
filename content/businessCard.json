@@ -1,5 +1,5 @@
 {
-  "siteName": "Business Card Default Name",
+  "siteTitle": "Business Card Default Name",
   "mainContent": "Person Name & their title",
   "sliderPhotos": [
     "https://images.unsplash.com/photo-1570528812845-c84c2bb58131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80",
@@ -14,7 +14,7 @@
     },
     {
       "title": "LinkedIn",
-      "slug": "linkedIn",
+      "slug": "linkedin",
       "content": {
         "type": "externalLink",
         "externalLink": "https://www.linkedin.com/"
