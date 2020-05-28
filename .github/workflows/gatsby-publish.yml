@@ -12,7 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: SophiaSaiada/gatsby-gh-pages-action@master
+
+      - name: Build
+        uses: SophiaSaiada/gatsby-gh-pages-action@master
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           dependencies-to-update: react-business-card
+
+      - name: Call On-Done Webhook
+        uses: joelwmale/webhook-action@6b83612926bbb8cdb65da3c1bedc9c08dea5810b
+        env:
+          WEBHOOK_URL: ${{ secrets.ON_PUBLISH_DONE_WEBHOOK_URL }}
+          data: ${{ github.repository }}
