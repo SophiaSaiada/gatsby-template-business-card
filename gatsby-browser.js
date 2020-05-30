@@ -13,9 +13,11 @@ exports.wrapPageElement = ({ element, props }) => {
       businessCardData: businessCardJson,
       selectedPageSlug: props.pageContext.selectedPageSlug,
       onSelectPage: (page) => {
-        console.log(page);
-
-        naviagte(`/${page.slug}/`);
+        if (page) {
+          naviagte(`/${page.slug}/`);
+        } else {
+          naviagte(`/`);
+        }
       },
     },
     element
